@@ -1,4 +1,5 @@
-/*  */
+/* FONTS */
+
 /* poppins-100 */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -97,9 +98,9 @@ body {
   margin: 0 auto;
   align-items: center;
   justify-content: space-between;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.4);
   border-radius: 50px;
-  padding: 8px 15px;
+  padding: 8px 20px;
 }
 
 .nav-logo-container {
@@ -110,15 +111,18 @@ body {
 .nav-logo-container > h3 {
   font-size: 1.125rem;
   font-weight: 500;
+  text-transform: uppercase;
 }
 
 .nav-container-ul {
   display: flex;
+  align-items: center;
   gap: 50px;
+  margin: unset;
 }
 
 .nav-container-ul > li:last-child {
-  margin-right: 20px;
+  margin-right: 5px;
 }
 
 .nav-container-ul__link-container {
@@ -128,6 +132,21 @@ body {
 .nav-container-ul__link-container > a {
   text-decoration: unset;
   font-size: 1.125rem;
-  font-weight: 400;
+  font-weight: 500;
   text-transform: uppercase;
+}
+
+.nav-container-ul__link-container > a:hover {
+  opacity: 0.5;
+  transition: ease-out;
+}
+
+#contact-nav-btn {
+  background-color: #e2651d;
+  padding: 10px 35px;
+  border-radius: 50px;
+}
+
+#contact-nav-btn > a {
+  color: #1e1d1a;
 }
