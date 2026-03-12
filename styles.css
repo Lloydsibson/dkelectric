@@ -73,21 +73,170 @@
   src: url("./fonts/poppins/poppins-v24-latin-900.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
+/* CSS RESET */
+
+@layer {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+  }
+
+  * {
+    padding: 0;
+    margin: 0;
+  }
+
+  html {
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    block-size: 100%;
+  }
+
+  body {
+    min-block-size: 100%;
+  }
+
+  img,
+  iframe,
+  audio,
+  video,
+  canvas {
+    display: block;
+    max-inline-size: 100%;
+    block-size: auto;
+  }
+
+  svg {
+    max-inline-size: 100%;
+  }
+
+  svg:not([fill]) {
+    fill: currentColor;
+  }
+
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+  }
+
+  textarea {
+    resize: vertical;
+  }
+
+  fieldset,
+  iframe {
+    border: none;
+  }
+
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    overflow-wrap: break-word;
+  }
+
+  p {
+    text-wrap: pretty;
+    font-variant-numeric: proportional-nums;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-variant-numeric: lining-nums;
+  }
+
+  p,
+  blockquote,
+  q,
+  figcaption,
+  li {
+    hanging-punctuation: first allow-end last;
+  }
+
+  input,
+  label,
+  button,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    line-height: 1.1;
+  }
+
+  math,
+  time,
+  table {
+    font-variant-numeric: tabular-nums lining-nums slashed-zero;
+  }
+
+  code {
+    font-variant-numeric: slashed-zero;
+  }
+
+  table {
+    border-collapse: collapse;
+  }
+
+  abbr {
+    font-variant-caps: all-small-caps;
+    text-decoration: none;
+
+    &[title] {
+      cursor: help;
+      text-decoration: underline dotted;
+    }
+  }
+
+  sup,
+  sub {
+    line-height: 0;
+  }
+
+  :disabled {
+    opacity: 0.8;
+    cursor: not-allowed;
+  }
+
+  :focus-visible {
+    outline-offset: 0.2rem;
+  }
+}
+
 /* MAIN CODE */
 
 body {
   background-color: #1e1d1a;
   font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  padding: 0 16px;
 }
 
 * {
   color: #fff;
 }
 
+/* NAV */
+
 .nav-container {
   display: flex;
-  position: fixed;
+  position: sticky;
   top: 20px;
+  left: 0;
   width: 100%;
 }
 
@@ -101,24 +250,40 @@ body {
   background-color: rgba(0, 0, 0, 0.4);
   border-radius: 50px;
   padding: 8px 20px;
+  margin: 0 auto;
 }
 
 .nav-logo-container {
   display: flex;
+  align-items: center;
   gap: 1rem;
+  width: 50%;
+}
+
+.nav-logo-container > svg {
+  width: 65px;
+  height: 65px;
 }
 
 .nav-logo-container > h3 {
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: 500;
   text-transform: uppercase;
+}
+
+.nav-links-container {
+  width: 50%;
 }
 
 .nav-container-ul {
   display: flex;
   align-items: center;
-  gap: 50px;
   margin: unset;
+  justify-content: flex-end;
+}
+
+.nav-container-ul > li {
+  margin-right: 50px;
 }
 
 .nav-container-ul > li:last-child {
@@ -131,22 +296,55 @@ body {
 
 .nav-container-ul__link-container > a {
   text-decoration: unset;
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: 500;
   text-transform: uppercase;
 }
 
 .nav-container-ul__link-container > a:hover {
   opacity: 0.5;
-  transition: ease-out;
 }
 
-#contact-nav-btn {
+button#contact-nav-btn {
+  color: #1e1d1a;
+  text-decoration: unset;
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: unset;
+  border: unset;
+  font-size: 1rem;
+  padding: unset;
+  margin: unset;
   background-color: #e2651d;
-  padding: 10px 35px;
+  padding: 12px 35px;
   border-radius: 50px;
 }
 
-#contact-nav-btn > a {
-  color: #1e1d1a;
+button#contact-nav-btn:hover {
+  cursor: pointer;
+  background-color: #b85318;
 }
+
+@media (max-width: 880px) {
+  .nav-container-ul__link-container > a:not(button) {
+    display: none;
+  }
+}
+
+@media (max-width: 470px) {
+  .nav-logo-container > h3 {
+    display: none;
+  }
+  .nav-container-ul__link-container > a:not(button) {
+    display: none;
+  }
+}
+
+@media (max-width: 330px) {
+  button#contact-nav-btn {
+    padding: 12px 20px;
+  }
+}
+
+/* END NAV */
