@@ -219,6 +219,13 @@
 
 /* MAIN CODE */
 
+/* Smooth Scroll */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
 body {
   background-color: #1e1d1a;
   font-family: "Poppins", sans-serif;
@@ -525,7 +532,7 @@ a#contact-nav-btn {
 #services > h2 {
   font-weight: 500;
   text-transform: uppercase;
-  font-size: 3.125rem;
+  font-size: 2.7rem;
   margin-bottom: 75px;
 }
 
@@ -545,7 +552,7 @@ a#contact-nav-btn {
 }
 
 .services-container__service > h3 {
-  font-size: 2.188rem;
+  font-size: 2rem;
   font-weight: 300;
   text-transform: uppercase;
   margin-bottom: 50px;
@@ -593,7 +600,7 @@ a#contact-nav-btn {
 #gallery > h2 {
   font-weight: 500;
   text-transform: uppercase;
-  font-size: 3.125rem;
+  font-size: 2.7rem;
   margin-bottom: 75px;
 }
 
@@ -615,6 +622,24 @@ a#contact-nav-btn {
   /* height: auto; */
   border-radius: 4px;
   display: block;
+}
+
+@media (max-width: 1020px) {
+  #gallery {
+    padding: 50px 16px;
+  }
+  #gallery > h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 719px) {
+  .pswp-gallery {
+    gap: 10px;
+  }
+  .pswp-gallery a {
+    width: 100%;
+  }
 }
 
 /* END GALLERY */
