@@ -379,6 +379,7 @@ a#contact-nav-btn {
   top: 0;
   left: 0;
   opacity: 0.1;
+  filter: blur(7px);
 }
 
 .hero-section__inner-container {
@@ -465,17 +466,18 @@ a#contact-nav-btn {
     order: 1;
   }
   .hero-section-message > h1 {
-    font-size: 2rem;
+    font-size: 2.3rem;
   }
   .hero-section__image img {
     max-width: 300px;
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 520px) {
   .hero-message__cta-container {
     flex-direction: column;
     width: 100%;
+    gap: 10px;
   }
   .hero-section-message > p > br {
     display: none;
@@ -487,13 +489,19 @@ a#contact-nav-btn {
   }
 }
 
-@media (max-width: 400px) {
+/* @media (max-width: 400px) {
   .hero-section__image img {
-    max-width: 250px;
+    max-width: 150px;
+  }
+} */
+
+@media (max-width: 520px) {
+  .hero-section__image img {
+    display: none;
   }
 }
 
-@media (max-width: 330px) {
+@media (max-height: 400px) {
   .hero-section__image img {
     display: none;
   }
