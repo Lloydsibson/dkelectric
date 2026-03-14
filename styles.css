@@ -461,6 +461,14 @@ a#contact-nav-btn {
   max-width: 500px;
 }
 
+#hero-down-arrow {
+  max-width: 40px;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 @media (max-width: 1180px) {
   .hero-section__inner-container {
     flex-direction: column;
@@ -485,7 +493,7 @@ a#contact-nav-btn {
   .hero-message__cta-container {
     flex-direction: column;
     width: 100%;
-    gap: 10px;
+    gap: 15px;
   }
   .hero-section-message > p > br {
     display: none;
@@ -494,6 +502,7 @@ a#contact-nav-btn {
     width: 100%;
     display: block;
     text-align: center;
+    line-height: 35px;
   }
 }
 
