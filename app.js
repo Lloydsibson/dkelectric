@@ -2,6 +2,9 @@
 // https://photoswipe.com/
 // https://github.com/dimsemenov/photoswipe?tab=readme-ov-file
 
+const yearElem = document.getElementById("year");
+yearElem.textContent = new Date().getFullYear();
+
 // 1. Import the Lightbox logic
 import PhotoSwipeLightbox from "./vendor/photoswipe/photoswipe-lightbox.esm.min.js";
 
