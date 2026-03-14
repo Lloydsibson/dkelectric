@@ -585,7 +585,7 @@ a#contact-nav-btn {
   }
   .services-container__service > h3 {
     font-size: 1.6rem;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
   }
   .services-container__service > svg {
     margin-bottom: 30px;
@@ -617,12 +617,12 @@ a#contact-nav-btn {
   gap: 20px;
 }
 
-.pswp-gallery__large,
-.pswp-gallery__quad {
+.pswp-gallery__featured,
+.pswp-gallery__grid {
   width: 50%;
 }
 
-.pswp-gallery__quad {
+.pswp-gallery__grid {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -630,7 +630,7 @@ a#contact-nav-btn {
   max-width: 1220px;
   margin: 0 auto;
 }
-.pswp-gallery__quad a {
+.pswp-gallery__grid a {
   width: calc(50% - 10px);
 }
 
@@ -659,8 +659,8 @@ a#contact-nav-btn {
   .pswp-gallery {
     gap: 10px;
   }
-  .pswp-gallery__large,
-  .pswp-gallery__quad {
+  .pswp-gallery__featured,
+  .pswp-gallery__grid {
     width: 100%;
   }
 }

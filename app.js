@@ -1,3 +1,4 @@
+// PHOTOSWIPE GALLERY
 // 1. Import the Lightbox logic
 import PhotoSwipeLightbox from "https://unpkg.com/photoswipe/dist/photoswipe-lightbox.esm.js";
 
@@ -11,3 +12,4 @@ const lightbox = new PhotoSwipeLightbox({
 });
 
 lightbox.init();
+// END PHOTOSWIPE GALLERY
