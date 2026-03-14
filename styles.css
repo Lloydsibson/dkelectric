@@ -550,7 +550,7 @@ a#contact-nav-btn {
 /* SERVICES SECTION */
 
 #services {
-  padding: 75px 16px;
+  padding: 150px 16px 75px 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
