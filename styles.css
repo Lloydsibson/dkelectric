@@ -732,6 +732,7 @@ a#contact-nav-btn {
   margin-bottom: 75px;
   text-align: center;
   padding: 0 16px;
+  font-weight: 400;
 }
 
 .reviews-container {
@@ -747,8 +748,12 @@ a#contact-nav-btn {
 
 .reviews-inner-container__review {
   padding: 30px;
-  border: 2px solid #e2651d;
+  border: 3px solid #e2651d;
+  background:
+    linear-gradient(#1e1d1a, #1e1d1a) padding-box,
+    linear-gradient(to right, #fc5c00, #ff9b61) border-box;
   border-radius: 20px;
+  border: 3px solid transparent;
 }
 
 .review-stars {
@@ -756,6 +761,7 @@ a#contact-nav-btn {
 }
 
 .review {
+  font-size: 1.1rem;
   font-weight: 400;
   margin-bottom: 50px;
   line-height: 28px;
@@ -810,6 +816,9 @@ a#contact-nav-btn {
     width: 300px;
     padding: 20px;
     /* margin-left: 16px; */
+  }
+  .review-stars {
+    margin-bottom: 15px;
   }
   .review {
     margin-bottom: 20px;
