@@ -592,7 +592,7 @@ a#contact-nav-btn {
 
 @media (max-width: 1020px) {
   #services {
-    padding: 50px 16px 0 16px;
+    padding: 75px 16px 0 16px;
   }
   #services > h2 {
     font-size: 2.2rem;
@@ -680,7 +680,7 @@ a#contact-nav-btn {
 
 @media (max-width: 1020px) {
   #gallery {
-    padding: 50px 16px 0 16px;
+    padding: 75px 16px 0 16px;
   }
   #gallery > h2 {
     font-size: 2.2rem;
@@ -716,7 +716,6 @@ a#contact-nav-btn {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* overflow: hidden; */
 }
 
 #reviews > h2 {
@@ -787,12 +786,12 @@ a#contact-nav-btn {
 }
 
 @media (max-width: 1020px) {
-  #review {
-    padding: 50px 16px 0 16px;
+  #reviews {
+    padding: 75px 0 0 0;
   }
-  #review > h2 {
+  #reviews > h2 {
     font-size: 2.2rem;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
   }
   #reviews > p {
     margin-bottom: 50px;
@@ -808,20 +807,23 @@ a#contact-nav-btn {
   .reviews-inner-container {
     gap: 16px;
     -webkit-overflow-scrolling: touch;
-    /* max-width: unset;
-    width: 100%; */
   }
   .reviews-inner-container__review {
     display: block;
     width: 300px;
     padding: 20px;
-    /* margin-left: 16px; */
   }
   .review-stars {
     margin-bottom: 15px;
   }
   .review {
     margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 325px) {
+  .reviews-inner-container__review {
+    width: 270px;
   }
 }
 
