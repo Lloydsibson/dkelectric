@@ -415,6 +415,7 @@
         position: fixed;
         bottom: 20px;
         right: 20px;
+        z-index: 999;
       }
 
       .whatsapp-chat-container:hover {
@@ -428,6 +429,16 @@
       .whatsapp-chat-container svg {
         height: 65px;
         width: 65px;
+      }
+
+      @media (max-width: 520px) {
+        .whatsapp-chat-container {
+          bottom: 5px;
+        }
+        .whatsapp-chat-container svg {
+          width: 75px;
+          height: 75px;
+        }
       }
 
       /* END WHATSAPP ICON */
@@ -473,9 +484,7 @@
   </head>
   <body id="top">
     <div class="whatsapp-chat-container">
-      <a
-        href="https://wa.me/+447462944899text=Hi!%20I%20found%20you%20on%20your%20website.%20I%20need%20help%20with%20an%20electrical%20job.%20Are%20you%20taking%20on%20new%20work%20at%20the%20moment?"
-      >
+      <a href="https://wa.me/+447928896643">
         <p>Whatsapp Chat Icon</p>
         <svg
           xmlns="http://www.w3.org/2000/svg"
